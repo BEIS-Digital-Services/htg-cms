@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "search_articles",
+  "info": {
+    "name": "Search-Articles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tags": {
+      "via": "search_articles",
+      "collection": "tags",
+      "dominant": true
+    },
+    "Article": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.text"
+    },
+    "Links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    },
+    "Buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "articleType": {
+      "type": "enumeration",
+      "enum": [
+        "external",
+        "internal"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "unique": false
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

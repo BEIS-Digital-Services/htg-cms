@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_page_adaptive_images",
+  "info": {
+    "name": "AdaptiveImage",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "desktop_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "mobile_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "adaptiveImage"
+      ],
+      "required": true,
+      "default": "adaptiveImage"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "topSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    },
+    "bottomSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    }
+  }
+}

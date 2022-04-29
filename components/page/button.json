@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_page_buttons",
+  "info": {
+    "name": "button",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "anchorlink": {
+      "type": "string"
+    },
+    "custom_class": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "ghost",
+        "warning",
+        "confirm",
+        "positive",
+        "negative",
+        "none"
+      ]
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "aria": {
+      "type": "string"
+    }
+  }
+}

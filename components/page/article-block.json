@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_article_blocks",
+  "info": {
+    "name": "articleBlock",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "articleBlock"
+      ],
+      "default": "articleBlock",
+      "required": true
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "search_articles": {
+      "collection": "search-articles"
+    }
+  }
+}

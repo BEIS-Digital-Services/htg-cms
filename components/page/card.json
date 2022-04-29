@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_page_cards",
+  "info": {
+    "name": "card",
+    "icon": "dice-four"
+  },
+  "options": {},
+  "attributes": {
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "card"
+      ],
+      "required": true,
+      "default": "card"
+    },
+    "one": {
+      "type": "richtext"
+    },
+    "two": {
+      "type": "richtext"
+    },
+    "four": {
+      "type": "richtext"
+    },
+    "three": {
+      "type": "richtext"
+    }
+  }
+}

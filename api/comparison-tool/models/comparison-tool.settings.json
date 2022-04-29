@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comparison_tools",
+  "info": {
+    "name": "comparison-tool",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pagename": {
+      "type": "string",
+      "required": true
+    },
+    "footers": {
+      "collection": "footers",
+      "via": "comparison_tools",
+      "dominant": true
+    },
+    "navigations": {
+      "collection": "navigation",
+      "via": "comparison_tools",
+      "dominant": true
+    }
+  }
+}

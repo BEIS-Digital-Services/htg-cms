@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_page_documents",
+  "info": {
+    "name": "document",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "Ref": {
+      "type": "string"
+    },
+    "abbr": {
+      "type": "enumeration",
+      "enum": [
+        "PDF",
+        "Word",
+        "Excel",
+        "PP",
+        "CSV",
+        "Txt"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "document"
+      ],
+      "required": true,
+      "default": "document"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

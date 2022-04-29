@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_page_quote_columns",
+  "info": {
+    "name": "quoteColumn",
+    "icon": "quote-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "quoteColumn"
+      ],
+      "default": "quoteColumn",
+      "required": true
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "copy": {
+      "type": "richtext"
+    },
+    "quote": {
+      "type": "richtext"
+    },
+    "quotePosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "quoteColumnAuthor": {
+      "type": "string"
+    },
+    "aria": {
+      "type": "string"
+    }
+  }
+}

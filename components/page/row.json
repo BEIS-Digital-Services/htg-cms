@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_page_rows",
+  "info": {
+    "name": "row",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "one": {
+      "type": "richtext"
+    },
+    "two": {
+      "type": "richtext"
+    },
+    "three": {
+      "type": "richtext"
+    },
+    "four": {
+      "type": "richtext"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

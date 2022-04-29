@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_page_quote_two_thirds",
+  "info": {
+    "name": "quoteTwoThirds",
+    "icon": "angle-double-left"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "quoteTwoThirds"
+      ],
+      "default": "quoteTwoThirds",
+      "required": true
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "quote": {
+      "type": "richtext"
+    },
+    "quoteTwoThirdsAuthor": {
+      "type": "string"
+    }
+  }
+}

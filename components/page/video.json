@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_page_videos",
+  "info": {
+    "name": "video",
+    "icon": "caret-square-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "youtube"
+      ],
+      "required": true,
+      "default": "youtube"
+    },
+    "textblock": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.text"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "beisWhite",
+        "beisNavyBlue",
+        "beisYellow",
+        "beisBlue",
+        "beisBlack",
+        "beisAqua"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "bottomSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

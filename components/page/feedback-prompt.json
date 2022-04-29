@@ -1,0 +1,87 @@
+{
+  "collectionName": "components_page_feedback_prompts",
+  "info": {
+    "name": "FeedbackPrompt",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "message": {
+      "type": "string"
+    },
+    "titleYes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button"
+    },
+    "titleNo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button"
+    },
+    "titleReport": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "feedbackPrompt"
+      ],
+      "default": "feedbackPrompt",
+      "required": true
+    },
+    "NoHeader": {
+      "type": "string"
+    },
+    "NoCopy": {
+      "type": "richtext"
+    },
+    "ReportHeader": {
+      "type": "string"
+    },
+    "ReportCopy": {
+      "type": "richtext"
+    },
+    "ReportLabel1": {
+      "type": "string"
+    },
+    "ReportLabel2": {
+      "type": "string"
+    },
+    "ReportSubmitButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button"
+    },
+    "ReportCancelButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button"
+    },
+    "NoSubmitButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button"
+    },
+    "NoEmailAddressLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.link"
+    },
+    "NoCancelButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button"
+    },
+    "NoLabel1": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

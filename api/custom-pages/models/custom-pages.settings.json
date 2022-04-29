@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "custom_pages",
+  "info": {
+    "name": "custom-pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "previewable": true,
+    "cloneable": true    
+  },
+  "pluginOptions": {
+    "preview-content": {
+      "previewable": true
+    }
+  },
+  "attributes": {
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "page.video",
+        "page.divider",
+        "page.global",
+        "page.textblock",
+        "page.articles",
+        "page.feedback-prompt",
+        "page.resources",
+        "page.article-block",
+        "page.reactive-tags",
+        "page.document",
+        "page.table",
+        "page.top-tip",
+        "page.image-with-text",
+        "page.business-card",
+        "page.statistics-text",
+        "page.quote-callout",
+        "page.quote-column",
+        "page.quote-two-thirds",
+        "page.socialmedia",
+        "page.case-studies",
+        "page.card",
+        "page.adaptive-image",
+        "page.three-levels"
+      ]
+    },
+    "pagename": {
+      "type": "string",
+      "required": true
+    },
+    "navigations": {
+      "collection": "navigation",
+      "via": "custom_pages",
+      "dominant": true
+    },
+    "hero_banners": {
+      "via": "custom_pages",
+      "collection": "hero-banners",
+      "dominant": true
+    },
+    "footers": {
+      "collection": "footers",
+      "via": "custom_pages",
+      "dominant": true
+    },
+    "index": {
+      "type": "boolean"
+    },
+    "follow": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "text"
+    },
+    "meta": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

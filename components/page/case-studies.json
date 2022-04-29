@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_page_case_studies",
+  "info": {
+    "name": "caseStudies",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.text"
+    },
+    "videoLink": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "caseStudies"
+      ],
+      "default": "caseStudies",
+      "required": true
+    }
+  }
+}

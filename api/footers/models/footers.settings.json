@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footers",
+  "info": {
+    "name": "footers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    },
+    "name": {
+      "type": "string"
+    },
+    "custom_pages": {
+      "via": "footers",
+      "collection": "custom-pages"
+    },
+    "sn_pages": {
+      "via": "footers",
+      "collection": "sn-pages"
+    },
+    "diagnostic_tools": {
+      "via": "footers",
+      "collection": "diagnostic-tool"
+    },
+    "comparison_tools": {
+      "via": "footers",
+      "collection": "comparison-tool"
+    }
+  }
+}

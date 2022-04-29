@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_page_links",
+  "info": {
+    "name": "link",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "anchorlink": {
+      "type": "string"
+    },
+    "custom_class": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "aria": {
+      "type": "string"
+    }
+  }
+}

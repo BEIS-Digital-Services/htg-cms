@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_page_quote_callouts",
+  "info": {
+    "name": "quoteCallout",
+    "icon": "quote-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "quoteCallout"
+      ],
+      "default": "quoteCallout",
+      "required": true
+    },
+    "copy": {
+      "type": "richtext"
+    },
+    "quote": {
+      "type": "richtext"
+    },
+    "quoteCalloutAuthor": {
+      "type": "string"
+    },
+    "quotePosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ]
+    }
+  }
+}

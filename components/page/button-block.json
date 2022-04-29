@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_page_button_blocks",
+  "info": {
+    "name": "buttonblock",
+    "icon": "server",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button"
+    },
+    "subheader": {
+      "type": "string",
+      "required": false
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

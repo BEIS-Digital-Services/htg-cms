@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_page_globals",
+  "info": {
+    "name": "global",
+    "icon": "ticket-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "subheader": {
+      "type": "string"
+    },
+    "copy": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "global"
+      ],
+      "default": "global"
+    },
+    "bottomSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    },
+    "topSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button"
+    }
+  }
+}

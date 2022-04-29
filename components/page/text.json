@@ -1,0 +1,73 @@
+{
+  "collectionName": "components_page_texts",
+  "info": {
+    "name": "text",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subheader": {
+      "type": "string"
+    },
+    "copy": {
+      "type": "richtext"
+    },
+    "header": {
+      "type": "string"
+    },
+    "subheaderColor": {
+      "type": "enumeration",
+      "enum": [
+        "beisWhite",
+        "beisNavyBlue",
+        "beisYellow",
+        "beisBlue",
+        "beisBlack",
+        "beisAqua"
+      ]
+    },
+    "backgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "beisWhite",
+        "beisNavyBlue",
+        "beisYellow",
+        "beisBlue",
+        "beisBlack",
+        "beisAqua"
+      ]
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "headerAlign": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "center",
+        "justify"
+      ]
+    },
+    "subHeaderAlign": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "center",
+        "justify"
+      ]
+    },
+    "copyAlign": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "center",
+        "justify"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sn-pages",
+      "handler": "sn-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sn-pages/count",
+      "handler": "sn-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sn-pages/:pagename",
+      "handler": "sn-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sn-pages",
+      "handler": "sn-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sn-pages/:id",
+      "handler": "sn-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sn-pages/:id",
+      "handler": "sn-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
