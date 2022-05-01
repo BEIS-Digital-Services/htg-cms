@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "navigations",
+  "collectionName": "navigationsdm",
   "info": {
     "name": "navigation"
   },
