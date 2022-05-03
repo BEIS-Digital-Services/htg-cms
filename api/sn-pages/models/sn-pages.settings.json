@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sn_pages",
+  "info": {
+    "name": "Sn-Pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "navigations": {
+      "collection": "navigation",
+      "via": "sn_pages",
+      "dominant": true
+    },
+    "hero_banners": {
+      "collection": "hero-banners",
+      "via": "sn_pages",
+      "dominant": true
+    },
+    "footers": {
+      "collection": "footers",
+      "via": "sn_pages",
+      "dominant": true
+    },
+    "side_navigations": {
+      "collection": "side-navigation",
+      "via": "sn_pages",
+      "dominant": true
+    },
+    "pagename": {
+      "type": "string"
+    },
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "page.textblock",
+        "page.global",
+        "page.resources",
+        "page.feedback-prompt",
+        "page.divider",
+        "page.video",
+        "page.articles",
+        "page.article-block",
+        "page.table",
+        "page.top-tip",
+        "page.image-with-text",
+        "page.statistics-text",
+        "page.business-card",
+        "page.quote-callout",
+        "page.quote-column",
+        "page.quote-two-thirds",
+        "page.socialmedia"
+      ]
+    }
+  }
+}

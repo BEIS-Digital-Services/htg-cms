@@ -1,0 +1,100 @@
+{
+  "collectionName": "components_page_textblocks",
+  "info": {
+    "name": "textblock",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "textblocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "columns",
+        "statistic",
+        "quotes",
+        "tags",
+        "articleExternal",
+        "details",
+        "fact",
+        "author",
+        "imageCaption",
+        "callOut",
+        "phaseBanner",
+        "articleInternal"
+      ],
+      "required": true
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "beisWhite",
+        "beisNavyBlue",
+        "beisYellow",
+        "beisBlue",
+        "beisBlack",
+        "beisAqua"
+      ]
+    },
+    "bottomSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    },
+    "topSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "linksAlign": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "center",
+        "justify"
+      ]
+    },
+    "buttonsAlign": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "center",
+        "justify"
+      ]
+    }
+  }
+}

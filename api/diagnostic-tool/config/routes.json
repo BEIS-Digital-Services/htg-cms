@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/diagnostic-tools",
+      "handler": "diagnostic-tool.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/diagnostic-tools/count",
+      "handler": "diagnostic-tool.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/diagnostic-tools/:pagename",
+      "handler": "diagnostic-tool.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/diagnostic-tools",
+      "handler": "diagnostic-tool.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/diagnostic-tools/:id",
+      "handler": "diagnostic-tool.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/diagnostic-tools/:id",
+      "handler": "diagnostic-tool.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

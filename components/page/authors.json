@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_authors",
+  "info": {
+    "name": "authors",
+    "icon": "atlas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

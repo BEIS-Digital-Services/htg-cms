@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_page_tables",
+  "info": {
+    "name": "table",
+    "icon": "border-none",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "table"
+      ],
+      "required": true,
+      "default": "table"
+    },
+    "one": {
+      "type": "string"
+    },
+    "two": {
+      "type": "string"
+    },
+    "three": {
+      "type": "string"
+    },
+    "four": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.row"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    }
+  }
+}

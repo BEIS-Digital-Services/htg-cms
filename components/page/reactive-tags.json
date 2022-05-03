@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_page_reactive_tags",
+  "info": {
+    "name": "reactiveTags",
+    "icon": "bolt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "reactiveTags"
+      ],
+      "default": "reactiveTags",
+      "required": true
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "tags": {
+      "collection": "tags"
+    },
+    "header": {
+      "type": "string"
+    },
+    "subheader": {
+      "type": "string"
+    }
+  }
+}

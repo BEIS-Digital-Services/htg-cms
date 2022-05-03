@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_page_socialmedias",
+  "info": {
+    "name": "socialmedia",
+    "icon": "compress-arrows-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "socialmedia"
+      ],
+      "required": true,
+      "default": "socialmedia"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "shareLink": {
+      "type": "string"
+    },
+    "linkedIn": {
+      "type": "string"
+    },
+    "shareLinkTitle": {
+      "type": "string"
+    }
+  }
+}

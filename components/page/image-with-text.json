@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_page_image_with_texts",
+  "info": {
+    "name": "ImageWithText",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "imageWithText"
+      ],
+      "default": "imageWithText",
+      "required": true
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "imagePosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "left",
+      "required": true
+    },
+    "copy": {
+      "type": "richtext"
+    }
+  }
+}
+
+

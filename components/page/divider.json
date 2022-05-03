@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_page_dividers",
+  "info": {
+    "name": "divider",
+    "icon": "grip-lines",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "beisWhite",
+        "beisNavyBlue",
+        "beisYellow",
+        "beisBlue",
+        "beisBlack",
+        "beisAqua",
+        "beisGrey",
+        "beisBlueFeedback"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "divider",
+        "divider10"
+      ]
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

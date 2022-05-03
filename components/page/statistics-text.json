@@ -1,0 +1,67 @@
+{
+  "collectionName": "components_page_statistics_texts",
+  "info": {
+    "name": "statisticsText",
+    "icon": "chart-pie",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "statisticBoxAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "statisticsText"
+      ],
+      "required": true,
+      "default": "statisticsText"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "backgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "beisNavyBlue",
+        "beisYellow",
+        "beisGreySecondary"
+      ]
+    },
+    "statisticNumberColor": {
+      "type": "enumeration",
+      "enum": [
+        "beisNavyBlue",
+        "beisYellow"
+      ]
+    },
+    "statisticTextColor": {
+      "type": "enumeration",
+      "enum": [
+        "beisNavyBlue",
+        "beisWhite"
+      ]
+    },
+    "statisticText": {
+      "type": "richtext"
+    },
+    "statisticNumber": {
+      "type": "string"
+    },
+    "statisticLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    }
+  }
+}

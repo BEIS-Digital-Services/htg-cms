@@ -1,0 +1,98 @@
+{
+  "collectionName": "components_page_articles",
+  "info": {
+    "name": "Articles",
+    "icon": "comment-medical",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Column1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.text"
+    },
+    "Image2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Image1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Image3": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Column2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.text"
+    },
+    "Column3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.text"
+    },
+    "Links1": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    },
+    "Links2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    },
+    "Links3": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    },
+    "Tags1": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button"
+    },
+    "Tags2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button"
+    },
+    "Tags3": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "articles"
+      ],
+      "default": "articles",
+      "required": true
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

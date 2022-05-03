@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "side_navigations",
+  "info": {
+    "name": "Side-Navigation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Side": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.linkblock"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sn_pages": {
+      "via": "side_navigations",
+      "collection": "sn-pages"
+    }
+  }
+}

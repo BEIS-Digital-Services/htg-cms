@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_page_three_levels",
+  "info": {
+    "name": "threeLevels",
+    "icon": "sitemap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "threeLevels"
+      ]
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "header1": {
+      "type": "string"
+    },
+    "header2": {
+      "type": "string"
+    },
+    "header3": {
+      "type": "string"
+    },
+    "copy1": {
+      "type": "richtext"
+    },
+    "copy2": {
+      "type": "richtext"
+    },
+    "copy3": {
+      "type": "richtext"
+    }
+  }
+}

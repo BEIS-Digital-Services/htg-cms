@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "diagnostic_tools",
+  "info": {
+    "name": "diagnostic-tool",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pagename": {
+      "type": "string"
+    },
+    "footers": {
+      "collection": "footers",
+      "via": "diagnostic_tools",
+      "dominant": true
+    },
+    "navigations": {
+      "collection": "navigation",
+      "via": "diagnostic_tools",
+      "dominant": true
+    },
+    "sideNavigation": {
+      "model": "side-navigation"
+    },
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "page.textblock"
+      ]
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_page_resources",
+  "info": {
+    "name": "resources",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "author": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.authors"
+    },
+    "header": {
+      "type": "string"
+    },
+    "subheader": {
+      "type": "string"
+    },
+    "copy": {
+      "type": "richtext"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.button"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "resources"
+      ],
+      "required": true,
+      "default": "resources"
+    },
+    "tags": {
+      "collection": "tags"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "bottomSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    },
+    "topSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    }
+  }
+}

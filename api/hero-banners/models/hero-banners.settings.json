@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hero_banners",
+  "info": {
+    "name": "Hero-Banners",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "HeroImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "HeroImageLocation": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "right",
+      "required": false
+    },
+    "HeroContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.textblock"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "custom_pages": {
+      "via": "hero_banners",
+      "collection": "custom-pages"
+    },
+    "leftBackgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "beisWhite",
+        "beisNavyBlue",
+        "beisYellow",
+        "beisBlue",
+        "beisBlack",
+        "beisAqua"
+      ]
+    },
+    "rightBackgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "beisWhite",
+        "beisNavyBlue",
+        "beisYellow",
+        "beisBlue",
+        "beisBlack",
+        "beisAqua"
+      ]
+    },
+    "sn_pages": {
+      "via": "hero_banners",
+      "collection": "sn-pages"
+    }
+  }
+}

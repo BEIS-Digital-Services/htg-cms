@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigations",
+  "info": {
+    "name": "navigation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.link"
+    },
+    "searchbar": {
+      "type": "boolean"
+    },
+    "custom_pages": {
+      "via": "navigations",
+      "collection": "custom-pages"
+    },
+    "sn_pages": {
+      "via": "navigations",
+      "collection": "sn-pages"
+    },
+    "diagnostic_tools": {
+      "via": "navigations",
+      "collection": "diagnostic-tool"
+    },
+    "comparison_tools": {
+      "via": "navigations",
+      "collection": "comparison-tool"
+    }
+  }
+}
