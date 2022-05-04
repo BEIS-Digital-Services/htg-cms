@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "SiteNavigations",
+  "info": {
+    "name": "Site Navigation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NavigationItem": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.navigation-link",
+      "required": true
+    },
+    "SubNavigationItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.navigation-link"
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
