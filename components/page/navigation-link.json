@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_page_navigation_links",
+  "info": {
+    "name": "Navigation Link",
+    "icon": "infinity",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": false
+    },
+    "CssClass": {
+      "type": "string"
+    },
+    "AriaText": {
+      "type": "string"
+    },
+    "custom_page": {
+      "model": "custom-pages"
+    },
+    "UrlRegEx": {
+      "type": "string"
+    },
+    "Order": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
