@@ -10,7 +10,7 @@
     "timestamps": true,
     "draftAndPublish": true,
     "previewable": true,
-    "cloneable": true    
+    "cloneable": true
   },
   "pluginOptions": {
     "preview-content": {
@@ -43,7 +43,8 @@
         "page.case-studies",
         "page.card",
         "page.adaptive-image",
-        "page.three-levels"
+        "page.three-levels",
+        "page.three-column-heroes"
       ]
     },
     "pagename": {

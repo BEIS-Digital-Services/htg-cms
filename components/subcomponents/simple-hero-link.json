@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_subcomponents_simple_hero_links",
+  "info": {
+    "name": "SimpleHeroLink",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Intro": {
+      "type": "text"
+    },
+    "LinkText": {
+      "type": "string"
+    },
+    "LinkUrl": {
+      "type": "string"
+    }
+  }
+}
