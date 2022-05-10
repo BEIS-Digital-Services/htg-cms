@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_landing_page_hero_lists",
+  "info": {
+    "name": "Landing Page Hero List",
+    "icon": "crown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heroes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.landing-page-hero"
+    }
+  }
+}
