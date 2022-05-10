@@ -24,7 +24,8 @@
       "type": "enumeration",
       "enum": [
         "divider",
-        "divider10"
+        "divider10",
+        "dividerContentWidth"
       ]
     },
     "hide": {
