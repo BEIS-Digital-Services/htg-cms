@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_subcomponents_link_simples",
+  "info": {
+    "name": "Link Simple",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Aria": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "NewTab": {
+      "type": "boolean"
+    }
+  }
+}

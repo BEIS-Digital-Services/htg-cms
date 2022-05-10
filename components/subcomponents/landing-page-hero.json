@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_subcomponents_landingpage_hero",
+  "info": {
+    "name": "Landing Page Hero",
+    "icon": "child",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string",
+      "required": true
+    },
+    "Intro": {
+      "type": "text",
+      "required": true
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "LinkText": {
+      "type": "string",
+      "required": true
+    },
+    "LinkUrl": {
+      "type": "string",
+      "required": true
+    },
+    "LinkAria": {
+      "type": "string"
+    }
+  }
+}
