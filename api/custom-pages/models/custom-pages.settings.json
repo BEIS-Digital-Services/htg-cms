@@ -44,7 +44,9 @@
         "page.card",
         "page.adaptive-image",
         "page.three-levels",
-        "page.landing-page-hero-list"
+        "page.landing-page-hero-list",
+        "page.three-column-heroes",
+        "page.link-list-hero"
       ]
     },
     "pagename": {

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_three_column_heroes",
+  "info": {
+    "name": "ThreeColumnHeroes",
+    "icon": "birthday-cake",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ColumnOne": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.simple-hero-link"
+    },
+    "ColumnTwo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.simple-hero-link"
+    },
+    "ColumnThree": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.simple-hero-link"
+    }
+  }
+}

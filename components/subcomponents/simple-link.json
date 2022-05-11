@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_subcomponents_simple_links",
+  "info": {
+    "name": "SimpleLink",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LinkText": {
+      "type": "string"
+    },
+    "LinkUrl": {
+      "type": "string"
+    }
+  }
+}

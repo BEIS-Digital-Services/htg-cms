@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_page_link_list_heroes",
+  "info": {
+    "name": "LinkListHero",
+    "icon": "angle-double-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "HeroLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.simple-link"
+    }
+  }
+}
