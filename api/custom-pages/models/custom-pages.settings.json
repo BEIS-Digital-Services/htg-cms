@@ -46,7 +46,8 @@
         "page.three-levels",
         "page.landing-page-hero-list",
         "page.three-column-heroes",
-        "page.link-list-hero"
+        "page.link-list-hero",
+        "page.landing-page-hero-banner"
       ]
     },
     "pagename": {

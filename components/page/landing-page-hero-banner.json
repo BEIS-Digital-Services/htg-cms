@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_page_landing_page_hero_banners",
+  "info": {
+    "name": "LandingPageHeroBanner",
+    "icon": "helicopter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Intro": {
+      "type": "text"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
