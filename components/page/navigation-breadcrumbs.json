@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_page_navigation_breadcrumbs",
+  "info": {
+    "name": "NavigationBreadcrumbs",
+    "icon": "bread-slice"
+  },
+  "options": {},
+  "attributes": {
+    "AdditionalLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.simple-link"
+    }
+  }
+}
