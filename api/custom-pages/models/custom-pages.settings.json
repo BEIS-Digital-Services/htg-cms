@@ -48,7 +48,9 @@
         "page.three-column-heroes",
         "page.link-list-hero",
         "page.navigation-breadcrumbs",
-        "page.landing-page-hero-banner"
+        "page.landing-page-hero-banner",
+        "page.image-item",
+        "page.accordion-list"
       ]
     },
     "pagename": {

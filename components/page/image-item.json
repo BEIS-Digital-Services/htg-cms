@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_page_image_items",
+  "info": {
+    "name": "ImageItem",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Summary": {
+      "type": "richtext"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.link"
+    }
+  }
+}
