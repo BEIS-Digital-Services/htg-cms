@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_page_search_article_listings",
+  "info": {
+    "name": "Search Article Listing",
+    "icon": "newspaper",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "SearchArticles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.single-search-article-picker"
+    }
+  }
+}

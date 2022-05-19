@@ -60,6 +60,9 @@
     "hide": {
       "type": "boolean",
       "default": false
+    },
+    "ReadingTime": {
+      "type": "string"
     }
   }
 }

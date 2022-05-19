@@ -50,7 +50,8 @@
         "page.navigation-breadcrumbs",
         "page.landing-page-hero-banner",
         "page.image-item",
-        "page.accordion-list"
+        "page.accordion-list",
+        "page.search-article-listing"
       ]
     },
     "pagename": {
