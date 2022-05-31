@@ -10,7 +10,7 @@ env:
 
 jobs:
     build-and-deploy:
-        if: github.actor == 'JamesChristianson' || github.actor == 'emailtokvk' || github.actor == 'thomaslkp123' || github.actor == 'Olawale'
+        if: github.actor == 'JamesChristianson' || github.actor == 'emailtokvk' || github.actor == 'thomaslkp123' || github.actor == 'TasTasniem'
         runs-on: ubuntu-latest
         steps:
         # checkout the repo

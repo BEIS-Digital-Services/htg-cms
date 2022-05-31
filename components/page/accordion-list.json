@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_page_accordion_lists",
+  "info": {
+    "name": "AccordionList",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "AccordionItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subcomponents.accordion-item"
+    }
+  }
+}

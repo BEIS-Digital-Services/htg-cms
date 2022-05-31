@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_subcomponents_accordion_items",
+  "info": {
+    "name": "AccordionItem",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "copy1": {
+      "type": "richtext"
+    },
+    "copy2": {
+      "type": "richtext"
+    }
+  }
+}
