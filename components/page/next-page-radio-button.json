@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_page_next_page_radio_buttons",
+  "info": {
+    "name": "NextPageRadioButton",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Radio1Text": {
+      "type": "string"
+    },
+    "Radio1Url": {
+      "type": "string"
+    },
+    "Radio2Text": {
+      "type": "string"
+    },
+    "Radio2Url": {
+      "type": "string"
+    },
+    "Radio3Text": {
+      "type": "string"
+    },
+    "Radio3Url": {
+      "type": "string"
+    },
+    "ButtonText": {
+      "type": "string"
+    }
+  }
+}
