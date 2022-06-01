@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_subcomponents_single_search_article_pickers",
+  "info": {
+    "name": "Single Search Article Picker",
+    "icon": "caret-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SearchArticle": {
+      "model": "search-articles"
+    },
+    "Description": {
+      "type": "string"
+    }
+  }
+}
