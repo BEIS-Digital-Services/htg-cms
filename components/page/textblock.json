@@ -37,6 +37,7 @@
       "enum": [
         "text",
         "columns",
+        "headerImageColumns",
         "statistic",
         "quotes",
         "tags",
