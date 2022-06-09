@@ -27,6 +27,15 @@
     },
     "ButtonText": {
       "type": "string"
+    },
+    "Radio1BoldLeadText": {
+      "type": "string"
+    },
+    "Radio2BoldLeadText": {
+      "type": "string"
+    },
+    "Radio3BoldLeadText": {
+      "type": "string"
     }
   }
 }
