@@ -1,9 +1,7 @@
 name: Push QA
 
 on:
-  push:
-    branches:
-      - qa
+  workflow_dispatch:
 
 env:
   AZURE_WEBAPP_NAME: htg-qa-strapi-app
@@ -11,6 +9,7 @@ env:
 
 jobs:
     build-and-deploy:
+        if: github.actor == 'JamesChristianson' || github.actor == 'emailtokvk' || github.actor == 'thomaslkp123' || github.actor == 'rajchala' || github.actor == 'TasTasniem'
         runs-on: ubuntu-latest
         steps:
         # checkout the repo
