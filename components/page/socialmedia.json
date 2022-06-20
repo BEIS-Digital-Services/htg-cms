@@ -40,6 +40,18 @@
     },
     "shareLinkTitle": {
       "type": "string"
+    },
+    "topSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    },
+    "bottomSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
     }
   }
 }
