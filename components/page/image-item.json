@@ -28,6 +28,14 @@
       "type": "component",
       "repeatable": false,
       "component": "page.link"
+    },
+    "UniqueActionName": {
+      "type": "string"
+    },
+    "CompletedLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.link"
     }
   }
 }
