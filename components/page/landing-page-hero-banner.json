@@ -11,7 +11,7 @@
       "type": "string"
     },
     "Intro": {
-      "type": "text"
+      "type": "richtext"
     },
     "Image": {
       "model": "file",
