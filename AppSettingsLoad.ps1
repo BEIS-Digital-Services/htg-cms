@@ -9,7 +9,7 @@ $settings = $Output | ConvertFrom-Json
 Write-Output "settings: $($settings.length)"
 
 # $pathConfig = "D:\Solutions\Production\BEIS\HelpToGrow\htg-cms\config\database.js"
-$pathConfig = "$(Build.SourcesDirectory)\config\database.js"
+$pathConfig = ".\config\database.js"
 Write-Output "pathConfig: $pathConfig"
 
 $content = Get-Content -Path $pathConfig
