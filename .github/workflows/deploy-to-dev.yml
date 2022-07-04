@@ -14,6 +14,11 @@ jobs:
         # checkout the repo
         - name: 'Checkout GitHub Action'
           uses: actions/checkout@main
+        
+        - task: PowerShell@2
+          inputs:
+            targetType: 'filePath'
+            filePath: $(System.DefaultWorkingDirectory)\AppSettingsLoad.ps1
           
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
