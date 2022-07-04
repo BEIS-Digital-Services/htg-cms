@@ -1,9 +1,9 @@
-
+param([string]$AppConfig="") 
 Write-Output "------------  AppSettingsLoad.ps1 ---------------"
 
-Write-Output "AppConfig: $($Env:AppConfig)"
+Write-Output "AppConfig: $AppConfig"
 
-$expression = "& az appconfig kv list --connection-string ""$Env:AppConfig"""
+$expression = "& az appconfig kv list --connection-string ""$AppConfig"""
 $Output = Invoke-Expression $expression
 $settings = $Output | ConvertFrom-Json
 Write-Output "settings: $($settings.length)"
