@@ -15,11 +15,12 @@ jobs:
         - name: 'Checkout GitHub Action'
           uses: actions/checkout@main
         
-        - task: PowerShell@2
-          inputs:
+        - name: 'AppSettingsLoad'
+          uses: PowerShell@2
+          with:
             targetType: 'filePath'
             filePath: $(System.DefaultWorkingDirectory)\AppSettingsLoad.ps1
-          
+
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
           with:
