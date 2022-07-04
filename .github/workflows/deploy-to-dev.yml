@@ -14,17 +14,14 @@ jobs:
         # checkout the repo
         - name: 'Checkout GitHub Action'
           uses: actions/checkout@main
-        
-        - name: 'AppSettingsLoad'
-          uses: PowerShell@2
-          with:
-            targetType: 'filePath'
-            filePath: $(System.DefaultWorkingDirectory)\AppSettingsLoad.ps1
-
+                
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
+        - run: |
+            ./AppSettingsLoad.ps1
+          shell: pwsh           
         
         - name: 'Build and push image'
           uses: azure/docker-login@v1
