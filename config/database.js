@@ -1,4 +1,4 @@
-module.exports = ({env}) => ({
+module.exports = () => ({
   defaultConnection: 'default',
   connections: {
     default: {
@@ -12,7 +12,7 @@ module.exports = ({env}) => ({
         password: '{{DATABASE_PASSWORD}}',
         schema: 'public',
         ssl: false,
-      },      
+      },
       options: {},
     },
   },
