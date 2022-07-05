@@ -22,7 +22,7 @@ jobs:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
         - run: |
             ./AppSettingsLoad.ps1 '${{ env.AZURE_WEBAPP_NAME }}' '${{ env.AZURE_WEBAPP_RG }}'
-          shell: pwsh           
+          shell: pwsh
         
         - name: 'Build and push image'
           uses: azure/docker-login@v1
