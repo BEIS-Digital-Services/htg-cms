@@ -5,6 +5,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: htg-dev-strapi-app
+  AZURE_WEBAPP_RG: htg-dev-strapi-rg
   REGISTRY_LOGIN_SERVER: htgdevregistry.azurecr.io
 
 jobs:
@@ -20,7 +21,7 @@ jobs:
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
         - run: |
-            ./AppSettingsLoad.ps1 ${{ env.AppConfig }}
+            ./AppSettingsLoad.ps1 '${{ env.AZURE_WEBAPP_NAME }}' '${{ env.AZURE_WEBAPP_RG }}'
           shell: pwsh           
         
         - name: 'Build and push image'

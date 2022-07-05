@@ -1,14 +1,19 @@
-param([string]$AppConfig="") 
+param([string]$webApp="", [string]$resourceGroup="") 
+
 Write-Output "------------  AppSettingsLoad.ps1 ---------------"
 
-Write-Output "AppConfig: $AppConfig"
+$expression = "& az webapp config connection-string list --name ""$webApp"" --resource-group ""$resourceGroup"""
+$Output = Invoke-Expression $expression
+$connectionStrings = $Output | ConvertFrom-Json
+Write-Output "connectionStrings: $($connectionStrings.length)"
 
-$expression = "& az appconfig kv list --connection-string ""$AppConfig"""
+$connectionString = $connectionStrings | Where-Object { $_.name -eq "AppConfig" } | Select-Object -First 1
+
+$expression = "& az appconfig kv list --connection-string ""$($connectionString.value)"""
 $Output = Invoke-Expression $expression
 $settings = $Output | ConvertFrom-Json
 Write-Output "settings: $($settings.length)"
 
-# $pathConfig = "D:\Solutions\Production\BEIS\HelpToGrow\htg-cms\config\database.js"
 $pathConfig = ".\config\database.js"
 Write-Output "pathConfig: $pathConfig"
 
