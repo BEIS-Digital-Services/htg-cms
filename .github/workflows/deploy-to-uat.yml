@@ -5,6 +5,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: htg-uat-strapi-app
+  AZURE_WEBAPP_RG: htg-uat-strapi-rg  
   REGISTRY_LOGIN_SERVER: htguatregistry.azurecr.io
 
 jobs:
@@ -20,6 +21,9 @@ jobs:
           uses: azure/login@v1
           with:
             creds: ${{ secrets.AZURE_UAT_CREDENTIALS }}
+        - run: |
+            ./AppSettingsLoad.ps1 '${{ env.AZURE_WEBAPP_NAME }}' '${{ env.AZURE_WEBAPP_RG }}'
+          shell: pwsh            
         
         - name: 'Build and push image'
           uses: azure/docker-login@v1

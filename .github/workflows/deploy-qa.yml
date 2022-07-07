@@ -5,6 +5,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: htg-qa-strapi-app
+  AZURE_WEBAPP_RG: htg-qa-strapi-rg  
   REGISTRY_LOGIN_SERVER: htgqaregistry.azurecr.io
 
 jobs:
@@ -20,6 +21,9 @@ jobs:
           uses: azure/login@v1
           with:
             creds: ${{ secrets.AZURE_QA_CREDENTIALS }}
+        - run: |
+            ./AppSettingsLoad.ps1 '${{ env.AZURE_WEBAPP_NAME }}' '${{ env.AZURE_WEBAPP_RG }}'
+          shell: pwsh            
         
         - name: 'Build and push image'
           uses: azure/docker-login@v1
