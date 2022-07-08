@@ -37,6 +37,9 @@
       ],
       "default": "caseStudies",
       "required": true
+    },
+    "VideoTitle": {
+      "type": "string"
     }
   }
 }
