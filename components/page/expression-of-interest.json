@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_page_expression_of_interests",
+  "info": {
+    "name": "Expression Of Interest",
+    "icon": "mail-bulk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CTABannerText": {
+      "type": "string"
+    },
+    "CTAButtonText": {
+      "type": "string"
+    },
+    "FormHeader": {
+      "type": "string"
+    },
+    "FormIntro": {
+      "type": "richtext"
+    },
+    "ThankYouHeader": {
+      "type": "string"
+    },
+    "ThankYouText": {
+      "type": "richtext"
+    },
+    "topSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    },
+    "bottomSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    }
+  }
+}
