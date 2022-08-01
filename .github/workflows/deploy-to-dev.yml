@@ -5,6 +5,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: htg-dev-strapi-app
+  AZURE_WEBAPP_RG: htg-dev-strapi-rg
   REGISTRY_LOGIN_SERVER: htgdevregistry.azurecr.io
 
 jobs:
@@ -14,11 +15,14 @@ jobs:
         # checkout the repo
         - name: 'Checkout GitHub Action'
           uses: actions/checkout@main
-          
+                
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
+        - run: |
+            ./AppSettingsLoad.ps1 '${{ env.AZURE_WEBAPP_NAME }}' '${{ env.AZURE_WEBAPP_RG }}'
+          shell: pwsh
         
         - name: 'Build and push image'
           uses: azure/docker-login@v1

@@ -52,7 +52,9 @@
         "page.landing-page-hero-banner",
         "page.image-item",
         "page.accordion-list",
-        "page.search-article-listing"
+        "page.search-article-listing",
+        "page.expression-of-interest",
+        "page.back-link"
       ]
     },
     "pagename": {

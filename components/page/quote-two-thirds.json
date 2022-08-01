@@ -2,7 +2,8 @@
   "collectionName": "components_page_quote_two_thirds",
   "info": {
     "name": "quoteTwoThirds",
-    "icon": "angle-double-left"
+    "icon": "angle-double-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -24,6 +25,18 @@
     },
     "quoteTwoThirdsAuthor": {
       "type": "string"
+    },
+    "topSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
+    },
+    "bottomSpace": {
+      "type": "enumeration",
+      "enum": [
+        "nospace"
+      ]
     }
   }
 }
