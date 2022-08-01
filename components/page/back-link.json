@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_page_back_links",
+  "info": {
+    "name": "Back Link",
+    "icon": "arrow-left"
+  },
+  "options": {},
+  "attributes": {
+    "BackLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "subcomponents.simple-link"
+    }
+  }
+}
