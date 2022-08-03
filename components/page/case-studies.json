@@ -35,8 +35,13 @@
       "enum": [
         "caseStudies"
       ],
+
       "default": "caseStudies",
-      "required": true
+      "required": true      
+    },
+    
+    "VideoTitle": {
+      "type": "string"
     }
   }
 }
