@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seo_redirects",
+  "info": {
+    "name": "SEO-Redirects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "from_pagename": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "to_pagename": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
