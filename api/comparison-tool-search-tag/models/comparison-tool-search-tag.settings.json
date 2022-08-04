@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comparison_tool_search_tags",
+  "info": {
+    "name": "Comparison Tool Search Tag",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SystemId": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "SystemName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "DisplayName": {
+      "type": "string",
+      "required": true
+    },
+    "FriendlyDisplayName": {
+      "type": "string"
+    },
+    "IsActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "SortOrder": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    }
+  }
+}
