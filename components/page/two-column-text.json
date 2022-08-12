@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_page_two_column_texts",
+  "info": {
+    "name": "TwoColumnText",
+    "icon": "arrow-alt-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "copy1": {
+      "type": "richtext"
+    },
+    "copy2": {
+      "type": "richtext"
+    },
+    "DividerText": {
+      "type": "string"
+    }
+  }
+}

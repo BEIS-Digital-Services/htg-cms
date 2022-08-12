@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_page_text_with_arrow_images",
+  "info": {
+    "name": "TextWithArrowImage",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}
