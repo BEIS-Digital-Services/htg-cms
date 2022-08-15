@@ -56,6 +56,14 @@
     },
     "ImageCaption": {
       "type": "string"
+    },
+    "CaptionType": {
+      "type": "enumeration",
+      "enum": [
+        "NoCaption",
+        "ImageLibCaption",
+        "SpecificCaption"
+      ]
     }
   }
 }
