@@ -36,6 +36,9 @@
     },
     "Radio3BoldLeadText": {
       "type": "string"
+    },
+    "Header": {
+      "type": "string"
     }
   }
 }
