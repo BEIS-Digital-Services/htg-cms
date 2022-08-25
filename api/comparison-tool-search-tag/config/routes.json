@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comparison-tool-search-tags",
+      "handler": "comparison-tool-search-tag.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comparison-tool-search-tags/count",
+      "handler": "comparison-tool-search-tag.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comparison-tool-search-tags/:id",
+      "handler": "comparison-tool-search-tag.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/comparison-tool-search-tags",
+      "handler": "comparison-tool-search-tag.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comparison-tool-search-tags/:id",
+      "handler": "comparison-tool-search-tag.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comparison-tool-search-tags/:id",
+      "handler": "comparison-tool-search-tag.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
