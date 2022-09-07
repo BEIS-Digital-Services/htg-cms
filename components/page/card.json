@@ -13,22 +13,33 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": [
-        "card"
-      ],
+      "enum": ["card"],
       "required": true,
       "default": "card"
+    },
+    "oneTitle": {
+      "type": "string"
     },
     "one": {
       "type": "richtext"
     },
+    "twoTitle": {
+      "type": "string"
+    },
     "two": {
       "type": "richtext"
+    },
+    "fourTitle": {
+      "type": "string"
     },
     "four": {
       "type": "richtext"
     },
+    "threeTitle": {
+      "type": "string"
+    },
     "three": {
+      "title": "string",
       "type": "richtext"
     }
   }
